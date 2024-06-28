@@ -21,7 +21,7 @@ def predict_evaluation(buying, maint, doors, persons, lug_boot, safety):
 
 # Sidebar navigation
 st.sidebar.title('Glendy (22-076)')
-page = st.sidebar.radio('Navigasi', ['Informasi', 'Inputan'])
+page = st.sidebar.radio('Navigasi', ['Informasi', 'Inputan',])
 
 # Page content based on selection
 if page == 'Informasi':
@@ -29,6 +29,9 @@ if page == 'Informasi':
     st.markdown("""
     Aplikasi ini dibuat untuk membanutu calon pembeli mobil untuk mengevaluasi mobil yang akan dibeli layak atau tidak untuk dibeli 
     """)
+
+    st.subheader('Source Code Aplikasi')
+    st.write('https://github.com/Glendy1208/car_evaluation_random_forest')
 
     st.header('Keterangan Hasil Evaluasi')
 
